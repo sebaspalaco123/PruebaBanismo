@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.287706">
+<testcase classname="Consultar PDF CiberSeguridad" name="Consultar PDF" time="28.287706">
+<system-out><![CDATA[Given aprender mas de Ciberseguridad........................................passed
+When voy aprender sobre ciber seguridad.....................................passed
+Then valido que el pdf se encuentre disponible..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

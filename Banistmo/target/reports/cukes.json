@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 67158400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarPDFStepDefinitions.prepareStage()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Consultar PDF",
+        "description": "",
+        "id": "consultar-pdf-ciberseguridad;consultar-pdf",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21440931900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "aprender mas de Ciberseguridad",
+            "match": {
+              "location": "ConsultarPDFStepDefinitions.aprenderMasDeCiberseguridad()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4923294300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "voy aprender sobre ciber seguridad",
+            "match": {
+              "location": "ConsultarPDFStepDefinitions.voyAprenderSobreCiberSeguridad()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 313166800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "valido que el pdf se encuentre disponible",
+            "match": {
+              "location": "ConsultarPDFStepDefinitions.validoQueElPdfSeEncuentreDisponible()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Consultar PDF CiberSeguridad",
+    "description": "",
+    "id": "consultar-pdf-ciberseguridad",
+    "keyword": "Feature",
+    "uri": "src/test/resources/com.banismo.www/com/banismo/features/consultar_pdf.feature",
+    "tags": []
+  }
+]

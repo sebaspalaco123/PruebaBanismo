@@ -1,0 +1,46 @@
+
+group 'com.banistmo.www'
+version '1.0-SNAPSHOT'
+
+buildscript{
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.1")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+    mavenLocal()
+}
+
+
+
+dependencies {
+    testImplementation "net.serenity-bdd:serenity-core:2.0.1"
+    testImplementation "net.serenity-bdd:serenity-junit:2.0.1"
+    compile "net.serenity-bdd:serenity-screenplay:1.9.9"
+    compile "net.serenity-bdd:serenity-screenplay-webdriver:1.9.9"
+    compile "net.serenity-bdd:serenity-cucumber:1.9.14"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
+}
+
+test {
+    gradle.startParameter.continueOnFailure = true
+}
+
+test.finalizedBy(aggregate)
